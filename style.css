@@ -1,0 +1,244 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #222233;
+}
+body > * {
+  position: absolute;
+  display: none;
+}
+body * {
+  color: #fff;
+  text-shadow: 1px 1px 3px #111;
+}
+label,
+input {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+input,
+::placeholder {
+  color: #fff;
+  text-shadow: 1px 1px 3px #111;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+input:focus,
+button:focus {
+  outline: none;
+}
+button {
+  background: none;
+  border: none;
+  margin: 2px 5px;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+/* clock */
+.js-clock {
+  top: 25%;
+  width: 100%;
+}
+h1 {
+  text-align: center;
+  font-size: 100px;
+}
+
+/* name */
+.js-form {
+  width: 100%;
+  top: 40%;
+}
+.js-form input {
+  font-size: 40px;
+}
+
+.js-greetings {
+  width: 100%;
+  top: 47%;
+}
+.js-greetings h4 {
+  text-align: center;
+  font-size: 40px;
+}
+/* menu */
+.js-menu {
+  top: 30px;
+  left: 30px;
+}
+.js-menu .btn {
+}
+.js-menu .btn .line {
+  background: white;
+  width: 35px;
+  height: 5px;
+  margin: 5px 0;
+  box-shadow: 1px 1px 2px #111;
+}
+.menu {
+  display: none;
+}
+.menu li {
+}
+.menu li:hover {
+  background: rgba(128, 128, 128, 0.5);
+}
+
+/* weather */
+.js-weather {
+  top: 30px;
+  right: 30px;
+}
+.js-weather span {
+  display: block;
+  text-align: center;
+}
+.temperature {
+  font-size: 20px;
+}
+
+/* to-do */
+.js-toDo {
+  top: 60%;
+  width: 100%;
+}
+.js-toDoForm {
+  width: 100%;
+}
+.js-toDoForm input {
+  font-size: 20px;
+}
+.js-toDoList {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.toDoList {
+  display: inline-block;
+  text-align: left;
+}
+.toDoList li label,
+.toDoList li button {
+  display: inline-block;
+  text-align: left;
+  font-size: 16px;
+  line-height: 16px;
+}
+.toDoList li label.checked {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.toDoList li input {
+  display: none;
+}
+
+.toDoList li .checkbox {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  font-size: 14px;
+  position: absolute;
+  border: 1px solid white;
+  text-indent: 2px;
+}
+.toDoList li .checkbox:hover,
+.toDoList li div.checked {
+  background: rgba(128, 128, 128, 0.5);
+}
+
+.toDoList li label {
+  margin-left: 8px;
+  cursor: pointer;
+  text-indent: 22px;
+  line-height: 18px;
+}
+
+/* others */
+.showing {
+  display: block;
+}
+
+.bgImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  animation: fadeIn 0.3s linear;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  h1 {
+    font-size: 50px;
+  }
+  .temperature {
+    font-size: 16px;
+  }
+  .js-greetings h4 {
+    font-size: 25px;
+  }
+  .js-toDoForm input {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 50px;
+  }
+  .js-greetings h4 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-height: 300px) {
+  .js-clock {
+    top: 10%;
+  }
+  .js-greetings {
+    display: none;
+  }
+  .js-toDo {
+    top: 40%;
+  }
+}
+
+@media screen and (max-height: 300px) and (max-width: 625px) {
+  .js-weather {
+    display: none;
+  }
+
+  .js-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 225px) {
+  .js-clock {
+    top: 20px;
+  }
+  .js-toDo {
+    display: none;
+  }
+}

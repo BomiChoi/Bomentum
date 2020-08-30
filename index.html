@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bomentum</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="js-clock">
+      <h1>00:00</h1>
+    </div>
+    <form class="js-form">
+      <input type="text" placeholder="What's your name?" autocomplete="off" />
+    </form>
+    <div class="js-greetings">
+      <h4></h4>
+    </div>
+    <div class="js-menu">
+      <div class="btn">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="menu">
+        <li><button>12-hour / 24-hour</button></li>
+        <li><button>Reset Location</button></li>
+        <li><button>Clear To-do</button></li>
+        <li><button>Logout</button></li>
+      </ul>
+    </div>
+    <div class="js-weather">
+      <span class="temperature"></span>
+      <span class="location"></span>
+    </div>
+    <div class="js-toDo">
+      <form class="js-toDoForm">
+        <input type="text" placeholder="Write a to-do" />
+      </form>
+      <div class="js-toDoList">
+        <ul class="toDoList"></ul>
+      </div>
+    </div>
+    <script src="clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="todo.js"></script>
+    <script src="bj.js"></script>
+    <script src="weather.js"></script>
+    <script src="menu.js"></script>
+  </body>
+</html>
