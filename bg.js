@@ -1,4 +1,5 @@
 const body = document.querySelector("body");
+let preloadImage;
 
 function paintImage() {
   const image = document.createElement("div");
@@ -10,7 +11,6 @@ function paintImage() {
     random = genRandom(5);
     src = `img/dawn${random + 1}.jpg`;
 
-    let preloadImage;
     window.onload = function() {
       for(i = 1; i <= 5; i++) {
         preloadImage  = new Image();
@@ -21,7 +21,7 @@ function paintImage() {
     //낮
     random = genRandom(6);
     src = `img/day${random + 1}.jpg`;
-    let preloadImage;
+
     window.onload = function() {
       for(i = 1; i <= 6; i++) {
         preloadImage  = new Image();
@@ -32,7 +32,7 @@ function paintImage() {
     // 저녁
     random = genRandom(3);
     src = `img/evening${random + 1}.jpg`;
-    let preloadImage;
+   
     window.onload = function() {
       for(i = 1; i <= 3; i++) {
         preloadImage  = new Image();
@@ -43,7 +43,7 @@ function paintImage() {
     // 밤
     random = genRandom(4);
     src = `img/night${random + 1}.jpg`;
-    let preloadImage;
+  
     window.onload = function() {
       for(i = 1; i <= 4; i++) {
         preloadImage  = new Image();
